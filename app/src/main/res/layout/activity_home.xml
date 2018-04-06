@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leopardtechlabs.careplus.HomeActivity"
+    app:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:background="#c2baba">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:collapsedTitleTextAppearance="@style/WhiteText"
+            app:title="Biby Chacko"
+            app:expandedTitleTextAppearance="@style/TransparentText"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <RelativeLayout
+                android:id="@+id/top_layer"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/circleImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/aamir" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/edit_draw"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_below="@+id/circleImageView2"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView" />
+                <TextView
+
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biby Chacko"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/circleImageView2"
+                    android:textColor="@color/cardview_light_background"
+                    android:id="@+id/textView" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:popupTheme="@style/Base.Theme.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#c2baba">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bookings"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/card_boundary"
+                    android:clickable="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Bookings"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                            android:layout_below="@+id/imageView2"
+                            android:layout_alignLeft="@+id/imageView2"
+                            android:layout_alignStart="@+id/imageView2"
+                            android:layout_marginTop="14dp" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/booking_draw"
+                            android:id="@+id/imageView2"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="33dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/messages"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="47dp"
+                            android:layout_marginStart="47dp"
+                            android:layout_marginTop="39dp"
+                            android:src="@drawable/vector_message" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/imageView"
+                            android:layout_marginBottom="42dp"
+                            android:layout_toEndOf="@+id/imageView"
+                            android:layout_toRightOf="@+id/imageView"
+                            android:background="@drawable/message_count_draw"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Messages"
+                            android:gravity="center"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                            android:layout_below="@+id/imageView"
+                            android:layout_alignRight="@+id/imageView"
+                            android:layout_alignEnd="@+id/imageView"
+                            android:layout_marginTop="15dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/live"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="47dp"
+                            android:layout_marginStart="47dp"
+                            android:layout_marginTop="39dp"
+                            android:src="@drawable/live_draw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Token Status"
+                            android:gravity="center"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                            android:layout_below="@+id/imageView3"
+                            android:layout_alignRight="@+id/imageView3"
+                            android:layout_alignEnd="@+id/imageView3"
+                            android:layout_marginTop="15dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="47dp"
+                            android:layout_marginStart="47dp"
+                            android:layout_marginTop="39dp"
+                            android:src="@drawable/call_draw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call Now"
+                            android:gravity="center"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                            android:layout_below="@+id/imageView4"
+                            android:layout_alignRight="@+id/imageView4"
+                            android:layout_alignEnd="@+id/imageView4"
+                            android:layout_marginTop="15dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "420085909428",
+    "firebase_url": "https://careplus-c7e10.firebaseio.com",
+    "project_id": "careplus-c7e10",
+    "storage_bucket": "careplus-c7e10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420085909428:android:bc672d68bdb0de6a",
+        "android_client_info": {
+          "package_name": "leopardtechlabs.careplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420085909428-6u5ef6hndad0u8fhvnpfvcjf2e9rm3d6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "leopardtechlabs.careplus",
+            "certificate_hash": "bc85cab8f459ba2c5eb3ae22bfdf35eae2c960a0"
+          }
+        },
+        {
+          "client_id": "420085909428-9cta298im9e1vrtv1arvhk8qpo2j89nq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxZFxIV9idXdRO6JtakuTJDzKY8OAqbRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420085909428-9cta298im9e1vrtv1arvhk8qpo2j89nq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

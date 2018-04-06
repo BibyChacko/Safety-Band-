@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="leopardtechlabs.careplus.RegistrerActivity">
+
+    <LinearLayout
+        android:id="@+id/layer_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary">
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/face"
+        android:layout_alignParentTop="true"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/layer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/cardview_light_background"
+        android:layout_below="@+id/circleImageView"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="  Name"
+            android:drawableLeft="@drawable/person_layout"
+            android:textSize="16dp"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Date of Birth"
+            android:inputType="date"
+            android:textSize="16dp"
+            android:drawableLeft="@drawable/date_layout"/>
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Mobile"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/phone_layout"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/email"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Email"
+                android:drawableLeft="@drawable/email_layout"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/password_layout"/>
+            <EditText
+                android:id="@+id/confirm_password"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Confirm Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/pass_confirm_layout"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Address"
+                android:drawableLeft="@drawable/location_layout"
+                android:inputType="textMultiLine"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sex:  " />
+                <RadioGroup
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginLeft="18dp"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_button_style"
+        android:drawableRight="@drawable/login_send"
+        android:padding="8dp"
+        android:text="Register Now  "
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@+id/layer_bottom"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

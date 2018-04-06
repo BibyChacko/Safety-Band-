@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CarePlus</string>
+    <string-array name="depatments">
+        <item>General Medicine</item>
+        <item>Gynecology</item>
+        <item>Pediatrics</item>
+        <item>Otrhopedics</item>
+        <item>Cardiology</item>
+    </string-array>
+    <string name="booknow">Book Now</string>
+    <string name="login_caption">Careplus is an application that eases your hospital bookings.
+        Using this application you can book appointments, view lab results and call ambulance
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="message_page">No new messages </string>
+    <string name="message_content">Your booking has been confirmed on 27/03/2018 .Check token status .Happy Life.</string>
+</resources>
